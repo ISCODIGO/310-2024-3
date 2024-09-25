@@ -38,7 +38,7 @@ float64         IEEE-754 64-bit floating-point numbers
 complex64       complex numbers with float32 real and imaginary parts
 complex128      complex numbers with float64 real and imaginary parts
 ```
-----
+---
 ### Otros
 ```
 bool      1 byte.
@@ -50,3 +50,9 @@ int       signed, either 32 or 64 bits
 uintptr   unsigned integer large enough to store the uninterpreted bits of a pointer value
 string
 ```
+---
+Go permite que las variables declaradas sean inicializadas de forma predeterminada.
+- **Enteros (incluido rune)**: 0
+- **flotantes**: 0.0
+- **string**: cadena vacia
+- **bool**: false

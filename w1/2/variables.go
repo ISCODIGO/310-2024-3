@@ -35,5 +35,5 @@ func main() {
 	)
 
 	fmt.Print("Valores predeterminados: ")
-	fmt.Println(e, f, g, h, i)
+	fmt.Println("int:", e, "float32:", f, "bool:", g, "rune:", h, "string:", i)
 }
