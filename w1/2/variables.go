@@ -24,4 +24,16 @@ func main() {
 	c := 10
 	var d float32 = float32(c)
 	fmt.Println(c, d)
+
+	// Declaracion de variables sin inicializar
+	var (
+		e int
+		f float32
+		g bool
+		h rune
+		i string
+	)
+
+	fmt.Print("Valores predeterminados: ")
+	fmt.Println(e, f, g, h, i)
 }

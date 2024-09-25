@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func nota(valor int) (string, bool) {
-	fmt.Println("Valor dentro de la funcion: ", valor)
 	/*
 
 	A = [90, 100]
@@ -15,34 +14,24 @@ func nota(valor int) (string, bool) {
 
 	*/
 
-	if 0 <= valor && valor <= 59 {
+	if valor >= 0 && valor <= 59 {
 		return "F", false
-	} else if 60 <= valor && valor <= 69 {
+	} else if valor >= 60 && valor <= 69 {
 		return "D", true
-	} else if 70 <= valor && valor <= 79 {
+	} else if valor >= 70 && valor <= 79 {
 		return "C", true
-	} else if 80 <= valor && valor <= 89 {
+	} else if valor >= 80 && valor <= 89 {
 		return "B", true
-	} else if 90 <= valor && valor <= 100 {
+	} else if valor >= 90 && valor <= 100 {
 		return "A", true
 	} else {
 		return "-", false
 	}
 }
 
-func sumar(valores ...int) int {
-	var total int
-	for _, valor := range valores {
-		total += valor
-	}
-	return total
-}
-
-
 func main() {
 	var x int
 	fmt.Scan(&x)
 	a, b := nota(x)
 	fmt.Println("La nota es", x, "y la calificacion es", a, "aprobo?", b)
-	fmt.Println(sumar(1, 2), sumar(1, 2, 3, 4), sumar(1, 2, 3, 4, 5, 6))
 }
