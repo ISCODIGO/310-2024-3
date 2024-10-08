@@ -6,6 +6,8 @@ func main() {
 	// declaracion de un array de 5 elementos
 	var arr1 [5]int
 
+	fmt.Println(arr1)
+
 	// asignacion de valores a un array
 	arr1[0] = 11
 	arr1[1] = 22
@@ -14,7 +16,7 @@ func main() {
 	arr1[4] = 55
 
 	// declaracion de un array de 5 elementos
-	var arr2 = [5]int{11, 22, 33, 44, 55}
+	arr2 := [5]int{11, 22, 33, 44, 55}
 
 	// declaracion de un array de 5 elementos
 	arr3 := [...]int{11, 22, 33, 44, 55}
