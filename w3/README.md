@@ -51,14 +51,15 @@ import "fmt"
 func main() {
     // Declarar un slice de enteros
     var slice []int
-    
+    var otro_slice []int = []int{99, 111, 222}
+
     // Agregar elementos usando append
     slice = append(slice, 10)
     slice = append(slice, 20, 30)
-    
+    // Concatenar un slice con otro
+    slice = append(slice, otro_slice...)
     // Imprimir el slice
     fmt.Println("Slice:", slice)
-    
     // Acceder a un elemento
     fmt.Println("Elemento en la posición 1:", slice[1])
 }
@@ -75,6 +76,7 @@ En este ejemplo, el slice slice comienza vacío, pero se pueden agregar elemento
 - **cap(slice)**: Devuelve la capacidad del slice (la capacidad del array subyacente).
 - **append(slice, elementos)**: Agrega uno o más elementos al final del slice.
 - **copy(destSlice, srcSlice)**: Copia elementos de un slice a otro.
+- **make(slice, tamaño, capacidad)**: Crear un slice con una cantidad de elementos y una capacidad (opcional) establecida.
 
 ---
 
@@ -89,7 +91,7 @@ import "fmt"
 func main() {
     // Declarar y inicializar un array
     arr := [5]int{10, 20, 30, 40, 50}
-    // Crear un sub-slice del array
+    // Crear un slice del array
     subSlice := arr[1:4]
     // Imprimir el sub-slice
     fmt.Println("Sub-slice:", subSlice)
