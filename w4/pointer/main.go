@@ -17,6 +17,17 @@ func main() {
 
 	fmt.Println("Valor de x", x)
 	fmt.Println("Direccion de x", &x)
+
+    original := 10
+    puntero := &original
+
+	fmt.Println("\n*** Descripcion de punteros ***")
+
+    fmt.Println("Variable original:", original)
+	fmt.Println("Direccion de la variable original:", &original)
+	fmt.Println("Valor del puntero:", puntero)
+    fmt.Println("Direccion del puntero:", &puntero)
+	fmt.Println("Valor de original a traves del puntero:", *puntero)
 }
 
 func no_change(x int) {

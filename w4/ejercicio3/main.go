@@ -112,6 +112,7 @@ func main() {
 	)
 	//fmt.Print("Escriba cuantos numeros deben registrarse: ")
 	//fmt.Scan(&numero)
+	//sum, prom, max, min = generarResultados(numero)
 	sum, prom, max, min = generarResultadosSinLimite()
 	fmt.Println("Suma:", sum)
 	fmt.Println("Promedio:", prom)
