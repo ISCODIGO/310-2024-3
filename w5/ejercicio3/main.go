@@ -53,4 +53,12 @@ func main() {
     // Imprimir las tareas después de completarlas
     fmt.Println("Después de completar algunas tareas:")
     imprimirTareas(tareas)
+
+    tareas[0].completado = false
+    fmt.Println(tareas[0].completado)
 }
+
+// salida, error
+// if error != nil {
+//     fmt.Println(error)
+// }
